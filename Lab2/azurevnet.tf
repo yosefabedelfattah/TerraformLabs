@@ -12,7 +12,6 @@ resource "azurerm_subnet" "mySubnet1" {
   resource_group_name  = var.resourcegrpName
   virtual_network_name = var.vnetName
   address_prefixes     = ["10.0.0.0/25"]
-  tags  = var.tags
 }
 
 resource "azurerm_subnet" "mySubnet2" {
@@ -20,5 +19,4 @@ resource "azurerm_subnet" "mySubnet2" {
   resource_group_name  = var.resourcegrpName
   virtual_network_name = var.vnetName
   address_prefixes     = ["10.0.0.128/25"]
-  tags  = var.tags
 }
